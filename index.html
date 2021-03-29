@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Karolina ♡ Erik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="topnav cb1" id="myTopnav">
+        <a href="Startsida.html" class="active ct2">Välkommen</a>
+        <a href="Om oss.html" class="ct2">Om oss</a>
+        <a href="#Bröloppet" class="ct2">Bröloppet</a>
+        <a href="#Tal och underhållning" class="ct2">Tal och underhållning</a>
+        <a href="O.S.A.html" class="ct2">O.S.A</a>
+        <a href="javascript:void(0);" class="icon ct2" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+     } 
+     </script>
+ 
+    <div class="bgimg col-11 col-s-11 center3 ct1 cb3">
+        <h1>
+            Karolina och Erik
+        </h1>
+        <img src="heart_curl.png" class="col-5 col-s-5 col-t-6 header">
+        <h2>18 Septemer 2021</h2>
+    </div>   
+   
+    <div class="col-8 col-s-8 center cb2">
+        <h2>Vi ska gifta oss</h2>
+        <p>Välkommna på bröllop i Linköping den 18 September 2021. </p>
+        <p> Mer information kommer löpande på denna hemsida.</p>
+    </div>
+
+    <img src="bouquet-smaller.jpg" class="col-8 col-s-8 col-t-12 center2 cb2">
+
+
+    <div class="col-8 col-s-8 center cb2">
+        <p> tid kvar:</p>
+        <p id="demo"></p>
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Sep 18, 2021, 16:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="demo"
+                document.getElementById("demo").innerHTML = days + " dagar " + hours + " timmar " +
+                    minutes + " minuter och " + seconds + " sekunder ";
+
+                // If the count down is finished, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+
+</html>
