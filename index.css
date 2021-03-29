@@ -102,6 +102,8 @@ img {
   overflow: auto;
   margin: auto;
   width: 91.66%;
+  position: sticky;
+  top: 0;
 }
 
 .topnav a {
