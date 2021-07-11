@@ -85,19 +85,20 @@ div.a {
   text-align: center;
   margin-left: 15%;
 }
-@media only screen and (max-width: 600px) {
-  .center6 {
-    padding:0;
-    text-align: center;
-    margin-left: 0;
-  }
-}
+
 .center7 {
-  width: 98%;
+  width: 91.66%;
   position: sticky;
   top: 0;
-  margin-left: 1%;
+  margin-left: 4.17%;
 }
+@media only screen and (max-width: 600px) {
+  .center7 {
+    padding:0;
+    text-align: center;
+    margin-left: 1%;
+    width: 98%;
+  }}
 .mapouter {position:relative;text-align:right;height:400px;width:400px;z-index: 1;overflow:hidden;background:none!important;height:400px;width:400px;z-index: 1;}
 .frame {width:400px; height:400px}
 
