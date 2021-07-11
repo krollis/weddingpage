@@ -104,7 +104,7 @@ div.a {
 .frame {width:400px; height:400px}
 
 @media only screen and (max-width: 600px){
-.mapouter {position:relative;text-align:right;height:250px;width:250px;z-index: 1;overflow:hidden;background:none!important;height:250px;width:250px;z-index: 1;}
+.mapouter {position:relative;text-align:left;height:250px;width:250px;z-index: 1;overflow:hidden;background:none!important;height:250px;width:250px;z-index: 1;}
 .frame {width:250px; height:250px}
 }
 img {
