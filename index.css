@@ -24,11 +24,11 @@ body {
 }
 
 .cb1 {
-  background-color: rgba(234, 236, 238, 0.753);
+  background-color:white;
 }
 
 .cb2 {
-  background-color: rgba(234, 236, 238, 0.904);
+  background-color: white;
 }
 
 h1 {
@@ -51,6 +51,7 @@ p {
   font-family: 'Arapey', serif;
   font-size: 15px;
 }
+
 div.a {
   line-height: 100%;
 }
@@ -60,6 +61,8 @@ div.a {
   padding: 40px;
   text-align: center;
   margin: auto;
+  margin-top:0;
+  margin-bottom: 0;
 }
 
 .center2 {
@@ -68,12 +71,9 @@ div.a {
   margin: auto;
 }
 .center3 {
+  padding: 40px;
   text-align: center;
-  width: 100%;
-  padding-left: 38%;
-  padding-top: 10px;
-  padding-bottom: 450px;
-  margin: auto;
+  margin-top: 0;
 }
 .center4 {
   padding: 0px;
@@ -97,6 +97,13 @@ div.a {
   position: sticky;
   top: 0;
   margin-left: 4.17%;
+}
+.mapouter {position:relative;text-align:right;height:400px;width:400px;z-index: 1;overflow:hidden;background:none!important;height:400px;width:400px;z-index: 1;}
+.frame {width:400px; height:400px}
+
+@media only screen and (max-width: 600px){
+.mapouter {position:relative;text-align:right;height:250px;width:250px;z-index: 1;overflow:hidden;background:none!important;height:250px;width:250px;z-index: 1;}
+.frame {width:250px; height:250px}
 }
 img {
   display: block;
@@ -125,10 +132,6 @@ img {
   top: 0;
   z-index: 1000;
   font-family: 'Arapey', serif;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-width: 0px;
-  border-color: #ddd;
   color: #383838;
 }
 
