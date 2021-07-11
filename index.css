@@ -93,10 +93,10 @@ div.a {
   }
 }
 .center7 {
-  width: 91.66%;
+  width: 98%;
   position: sticky;
   top: 0;
-  margin-left: 4.17%;
+  margin-left: 1%;
 }
 .mapouter {position:relative;text-align:right;height:400px;width:400px;z-index: 1;overflow:hidden;background:none!important;height:400px;width:400px;z-index: 1;}
 .frame {width:400px; height:400px}
@@ -312,6 +312,9 @@ img {
   }
   .col-t-12 {
     width: 100%;
+  }
+  .col-t-13 {
+    width: 98%;
   }
 }
 input[type="text"],
