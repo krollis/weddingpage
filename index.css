@@ -59,11 +59,18 @@ p.italic {
 }
 ul.a {
   list-style-type: circle;
-  list-style-position: inside;
+  list-style-position: auto;
   font-family: 'Arapey', serif;
   font-size: 15px;
   text-align: left;
   margin-left: 23%;
+}
+ul.b {
+  list-style-type: circle;
+  list-style-position: auto;
+  font-family: 'Arapey', serif;
+  font-size: 15px;
+  text-align: left;
 }
 @media only screen and (max-width: 600px){
   ul.a {
